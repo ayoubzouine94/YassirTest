@@ -10,17 +10,18 @@ import Foundation
 
 
 final class MovieViewModel: ObservableObject {
-    @Published var moviess: [Result]?
-    @Published var movi: Result?
-    
+    @Published var movies: [Movie] = []
     
     func getMovies() async {
         do {
             let movies = try await MovieService.fetch(esponseType: MovieResponse.self)
             DispatchQueue.main.async {
-                self.moviess = movies.results
+                self.movies = movies.results?.map {
+                    Movie(result: $0)
+                } ?? []
             }
-        }catch(let error) {
+        }
+        catch(let error) {
             print(error.localizedDescription)
         }
     }

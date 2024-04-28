@@ -8,30 +8,34 @@
 import SwiftUI
 
 struct MovieDetailsView: View {
-    let movie: Result
+    @ObservedObject var viewModel = MovieViewModel()
+    let movie: Movie
     var body: some View {
         VStack {
             ScrollView {
                 AsyncImage(url: movie.backdropURL) { image in
                     image
                         .resizable()
+                        .frame(width: 200, height: 300)
                         .scaledToFill()
+                        
                 } placeholder: {
                     ProgressView()
                 }
-                VStack(alignment: .leading) {
-                    Text(movie.title ?? "Unknown title")
+                .padding(.bottom)
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(movie.title)
                         .font(.title2.bold())
-                    Text(movie.releaseDate ?? "Unknown date")
+                    Text(viewModel.getYear(year: movie.releaseDate))
                         .font(.title3.bold())
-                    Text(movie.overview ?? "No overview available")
+                    Text(movie.overview)
                         .font(.headline)
-                    
                 }
+                .padding(.horizontal, 8)
             }
        
         }
-        .padding()
+        
     }
 }
 
