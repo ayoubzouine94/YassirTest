@@ -35,7 +35,7 @@ struct MovieListView: View {
             }
         }
         .task {
-            await viewModel.getMovies()
+            await viewModel.getMovies(path: .movie)
         }
     }
 }

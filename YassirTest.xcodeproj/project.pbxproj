@@ -19,6 +19,7 @@
 		041A0F412BDDC47600E7E329 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0F402BDDC47600E7E329 /* MovieListView.swift */; };
 		041A0F432BDDC4AD00E7E329 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0F422BDDC4AD00E7E329 /* MovieDetailsView.swift */; };
 		041A0F452BDE7EED00E7E329 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0F442BDE7EED00E7E329 /* Movie.swift */; };
+		041A0F472BDE829E00E7E329 /* MoviePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0F462BDE829E00E7E329 /* MoviePath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		041A0F402BDDC47600E7E329 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		041A0F422BDDC4AD00E7E329 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		041A0F442BDE7EED00E7E329 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		041A0F462BDE829E00E7E329 /* MoviePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePath.swift; sourceTree = "<group>"; };
+		041A0F482BDE8AA000E7E329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		041A0EAD2BDC282400E7E329 /* YassirTest */ = {
 			isa = PBXGroup;
 			children = (
+				041A0F482BDE8AA000E7E329 /* Info.plist */,
 				041A0F392BDDB82A00E7E329 /* Networking */,
 				041A0F382BDDB82300E7E329 /* Model */,
 				041A0F372BDDB81200E7E329 /* ViewModel */,
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				041A0F3E2BDDC43900E7E329 /* MovieService.swift */,
+				041A0F462BDE829E00E7E329 /* MoviePath.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				041A0F3D2BDDC3D900E7E329 /* MovieViewModel.swift in Sources */,
 				041A0F3F2BDDC43900E7E329 /* MovieService.swift in Sources */,
 				041A0F412BDDC47600E7E329 /* MovieListView.swift in Sources */,
+				041A0F472BDE829E00E7E329 /* MoviePath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +480,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"YassirTest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YassirTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -510,6 +517,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"YassirTest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YassirTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

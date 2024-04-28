@@ -12,9 +12,9 @@ import Foundation
 final class MovieViewModel: ObservableObject {
     @Published var movies: [Movie] = []
     
-    func getMovies() async {
+    func getMovies(path: MovieAPIPath) async {
         do {
-            let movies = try await MovieService.fetch(esponseType: MovieResponse.self)
+            let movies = try await MovieService.fetch(path: path,esponseType: MovieResponse.self)
             DispatchQueue.main.async {
                 self.movies = movies.results?.map {
                     Movie(result: $0)
