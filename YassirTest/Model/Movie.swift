@@ -25,7 +25,5 @@ import Foundation
         self.releaseDate = result.releaseDate ?? ""
         self.title = result.title ?? ""
         self.backdropURL = URL(string: "\(MovieAPIPath.image.path)\(result.backdropPath ?? "")" ) ?? URL(string: "https://example.com/default-image.jpg")!
-        let imagePath = "\(MovieAPIPath.image.path)\(result.backdropPath ?? "")"
-        
     }
 }
