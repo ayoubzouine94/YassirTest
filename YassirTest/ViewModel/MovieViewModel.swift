@@ -16,7 +16,7 @@ import Foundation
         do {
             let movies = try await MovieService.fetch(path: path,esponseType: MovieResponse.self)
             DispatchQueue.main.async {
-                self.movies = movies.results?.map {
+                self.movies = movies?.results?.map {
                     Movie(result: $0)
                 } ?? []
             }

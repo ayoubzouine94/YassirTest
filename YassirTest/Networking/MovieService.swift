@@ -9,11 +9,16 @@ import Foundation
 
 
 class MovieService {
-    static let baseUrl = "https://api.themoviedb.org"
-    static let key = "c9856d0cb57c3f14bf75bdc6c063b8f3"
     
-    static func fetch<T: Decodable>(path: MovieAPIPath,esponseType: T.Type) async throws -> T {
-        let urlString = "\(baseUrl)\(path.path)api_key=\(key)\(MovieAPIPath.secondaryPath.path)"
+
+    static func fetch<T: Decodable>(path: MovieAPIPath,esponseType: T.Type) async throws -> T? {
+        
+        guard let apiKey = ConfigService.readConfigFromPlist()?.apiKey, let baseURL = ConfigService.readConfigFromPlist()?.baseURL else {
+          return nil
+        }
+     
+        let urlString = "\(baseURL)\(path.path)api_key=\(apiKey)\(MovieAPIPath.secondaryPath.path)"
+        
         guard let url = URL(string: urlString) else {
             fatalError("Invalid URL")
         }
