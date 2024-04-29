@@ -11,7 +11,6 @@
 		041A0EB32BDC282500E7E329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041A0EB22BDC282500E7E329 /* Assets.xcassets */; };
 		041A0EB72BDC282500E7E329 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041A0EB62BDC282500E7E329 /* Preview Assets.xcassets */; };
 		041A0EC12BDC282600E7E329 /* YassirTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0EC02BDC282600E7E329 /* YassirTestTests.swift */; };
-		041A0ECB2BDC282600E7E329 /* YassirTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0ECA2BDC282600E7E329 /* YassirTestUITests.swift */; };
 		041A0ECD2BDC282600E7E329 /* YassirTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0ECC2BDC282600E7E329 /* YassirTestUITestsLaunchTests.swift */; };
 		041A0F3B2BDDC38E00E7E329 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0F3A2BDDC38E00E7E329 /* MovieResponse.swift */; };
 		041A0F3D2BDDC3D900E7E329 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0F3C2BDDC3D900E7E329 /* MovieViewModel.swift */; };
@@ -22,6 +21,7 @@
 		041A0F472BDE829E00E7E329 /* MoviePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0F462BDE829E00E7E329 /* MoviePath.swift */; };
 		041A0F4A2BDE8EA500E7E329 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0F492BDE8EA500E7E329 /* Config.swift */; };
 		041A0F4C2BDE993B00E7E329 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 041A0F4B2BDE993B00E7E329 /* README.md */; };
+		046DC7402BDFCC9400CB4760 /* YassirTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0ECA2BDC282600E7E329 /* YassirTestUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +92,6 @@
 		041A0EA22BDC282400E7E329 = {
 			isa = PBXGroup;
 			children = (
-				041A0F4B2BDE993B00E7E329 /* README.md */,
 				041A0EAD2BDC282400E7E329 /* YassirTest */,
 				041A0EBF2BDC282600E7E329 /* YassirTestTests */,
 				041A0EC92BDC282600E7E329 /* YassirTestUITests */,
@@ -121,6 +120,7 @@
 				041A0EAE2BDC282400E7E329 /* YassirTestApp.swift */,
 				041A0EB22BDC282500E7E329 /* Assets.xcassets */,
 				041A0EB42BDC282500E7E329 /* YassirTest.entitlements */,
+				041A0F4B2BDE993B00E7E329 /* README.md */,
 				041A0EB52BDC282500E7E329 /* Preview Content */,
 			);
 			path = YassirTest;
@@ -137,6 +137,7 @@
 		041A0EBF2BDC282600E7E329 /* YassirTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				041A0ECA2BDC282600E7E329 /* YassirTestUITests.swift */,
 				041A0EC02BDC282600E7E329 /* YassirTestTests.swift */,
 			);
 			path = YassirTestTests;
@@ -145,7 +146,6 @@
 		041A0EC92BDC282600E7E329 /* YassirTestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				041A0ECA2BDC282600E7E329 /* YassirTestUITests.swift */,
 				041A0ECC2BDC282600E7E329 /* YassirTestUITestsLaunchTests.swift */,
 			);
 			path = YassirTestUITests;
@@ -335,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041A0EC12BDC282600E7E329 /* YassirTestTests.swift in Sources */,
+				046DC7402BDFCC9400CB4760 /* YassirTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041A0ECB2BDC282600E7E329 /* YassirTestUITests.swift in Sources */,
 				041A0ECD2BDC282600E7E329 /* YassirTestUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

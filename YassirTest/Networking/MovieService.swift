@@ -7,11 +7,12 @@
 
 import Foundation
 
-final class MovieService {
+protocol  MovieServiceDelegate {
     
-    
-    
-    
+    func fetch<T: Decodable>(path: MovieAPIPath,esponseType: T.Type)
+}
+class MovieService {
+
     static let baseUrl = "https://api.themoviedb.org"
     static let key = "c9856d0cb57c3f14bf75bdc6c063b8f3"
     

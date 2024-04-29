@@ -8,7 +8,7 @@
 import Foundation
 
 
-enum MovieAPIPath {
+public enum MovieAPIPath {
     case movie
     case image
     case secondaryPath

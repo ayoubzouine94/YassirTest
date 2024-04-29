@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Movie: Identifiable, Hashable {
+ struct Movie: Identifiable, Hashable {
 
     let backdropPath: String
     let id: Int
@@ -24,7 +24,8 @@ struct Movie: Identifiable, Hashable {
         self.overview = result.overview ?? ""
         self.releaseDate = result.releaseDate ?? ""
         self.title = result.title ?? ""
-        self.backdropURL = URL(string: "\(MovieAPIPath.image.path)\(result.backdropPath ?? "")") ?? URL(string: "")!
+        self.backdropURL = URL(string: "\(MovieAPIPath.image.path)\(result.backdropPath ?? "")" ) ?? URL(string: "https://example.com/default-image.jpg")!
+        let imagePath = "\(MovieAPIPath.image.path)\(result.backdropPath ?? "")"
+        
     }
-    
 }

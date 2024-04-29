@@ -9,7 +9,7 @@ import Foundation
 
 
 
-final class MovieViewModel: ObservableObject {
+ class MovieViewModel: ObservableObject {
     @Published var movies: [Movie] = []
     
     func getMovies(path: MovieAPIPath) async {
